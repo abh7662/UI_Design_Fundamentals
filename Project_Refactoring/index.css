@@ -1,69 +1,184 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito';
-    overflow: hidden;
 }
 
-.container {
-    padding: 4em;
+body {
+    background: #3b4acd;
+    color: #A5B2D3;
+    padding: .5em;
+    font-family: 'Nunito',sans-serif;
     height: 100vh;
+    text-align:center;
 }
-.container:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20%;
-    background: #E4F0FF;
-    height: 100vh;
-    z-index: -1;
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header svg {
+    width: 1.5em;
+    cursor: pointer;
+}
+
+a {
+    color: white;
 }
 
 
-span {
-    font-size: .4em;
-    background: #DEDEDE;
-    color: black;
-    padding: .2em .4em;
-    border-radius: 1em;
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a.logo {
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+a.cta-btn {
+    margin-left: auto;
+    background: #FC85AE;
+    padding: 1em;
     display: inline-block;
+    border-radius: 2em;
+    font-size: .6em;
+    color: #303A52;
+    font-weight: bold;
 }
 
-/* span:before {
-    content: '1:30 PM';
-    font-size: 15em;
-    position: absolute;
-    color: #F4F4F4;
-    z-index: -1;
-    white-space: nowrap;
-    left: 30%;
-    top: 15%;
-} */
+/* Navigation */
+
+
+nav {
+    position: fixed;
+    background: #576483;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    width: 80%;
+    visibility: hidden;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .3s;
+    text-align: center;
+}
+
+
+nav p {
+    margin-bottom: 0;
+}
+
+nav svg {
+    cursor: pointer;
+    width: 1em;
+}
+
+nav ul li a {
+    display: block;
+    padding: .2em;
+    font-size: 1.8em;
+    padding: .8em;
+}
+
+.selected {
+    background: #9E579D;
+}
+
+.open-nav {
+    visibility: unset;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Main Section */
+
 
 h1 {
-    color: #0165E7;
-    font-size: 3em;
+    color: white;
+    margin-top: 1em;
 }
 
-p {
+.panel {
+    background: #39445F;
+    border-radius: .3em;
+}
+
+h3 {
+    color: #FC85AE;
+    margin: 0;
+    font-size: 2em;
+}
+
+ul.data li p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.8em;
+    margin: .3em 0 1em;
+}
+
+ul.data li:last-child p {
+    margin-bottom: 0;
+}
+ul.secondary {
+    margin-top: 2em;
+}
+ul.secondary li p {
     font-size: 1.3em;
-    padding-left: 2em;
-    border-left: 4px solid gray;
+}
+
+main {
+    border: 1px solid white;
 }
 
 
 
-/*
+body {
+    background: #303a52;
+}
 
-- White Space
-- Color 
-- Contrast 
-- Scale
-- Alignment
-- Typography
-- Visual Hierarchy
+nav {
+    background: #2C354A;
+}
 
-*/
+
+a{
+    text-decoration: none;
+    font-size: 2em;
+}
+a.cta-btn{
+    font-size: 1.3em;
+    padding: .2em .4em;
+}
+
+main {
+    border: unset;
+}
+
+nav{
+    text-align: left;
+    font-size: .9em;
+}
+
+.panel {
+    padding: 1.5em 0;
+}
+
+h1{
+    margin: 2em 0;
+}
+.columns{
+    padding: 2em 0;
+
+}
+.inner-wrapper{
+    padding: 1em;
+}

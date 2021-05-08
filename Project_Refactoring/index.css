@@ -12,7 +12,7 @@ body {
     background: #3b4acd;
     color: #A5B2D3;
     padding: .5em;
-    font-family: 'Nunito',sans-serif;
+    font-family: serif;
     height: 100vh;
     text-align:center;
 }
@@ -85,7 +85,6 @@ nav ul li a {
     display: block;
     padding: .2em;
     font-size: 1.8em;
-    padding: .8em;
 }
 
 .selected {
@@ -140,45 +139,135 @@ main {
 }
 
 
+/* Your Fixes Below */
 
 body {
-    background: #303a52;
+    background: #303A52;
+    font-family: 'Nunito', sans-serif;
 }
 
 nav {
     background: #2C354A;
 }
 
-
-a{
-    text-decoration: none;
-    font-size: 2em;
-}
-a.cta-btn{
-    font-size: 1.3em;
-    padding: .2em .4em;
-}
-
 main {
-    border: unset;
+   border: unset;
+} 
+
+a {
+    text-decoration: none;
 }
 
-nav{
-    text-align: left;
+p {
+    line-height: 1.4em;
+}
+
+a.cta-btn {
     font-size: .9em;
+    padding: .2em .4em;
+    border-radius: .2em;
 }
 
-.panel {
-    padding: 1.5em 0;
+nav ul li a {
+    font-size: 1.2em;
+    padding: .8em 1em;
 }
 
-h1{
-    margin: 2em 0;
+h3 {
+    font-size: unset;
 }
-.columns{
-    padding: 2em 0;
 
+nav {
+    text-align: left;
 }
-.inner-wrapper{
+
+.inner-wrapper {
     padding: 1em;
+}
+.panel {
+    padding: .5em 1em;
+    margin-bottom: 2em;
+}
+
+
+/* Large Phones */
+
+@media (min-width: 420px) {
+    body {
+        padding: 1em;
+        text-align: left;
+    }
+    ul.data {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul.data li {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 550px) {
+    ul.data {
+        justify-content: center;
+    }
+    .panel ul.data li {
+        flex: 0 0 33%;
+    }
+    .panel ul.data li p {
+        margin-bottom: 0;
+    }
+    nav {
+        width: 40%;
+    }
+}
+
+@media (min-width: 720px) {
+    body {
+        padding: 1.5em;
+    }
+    .columns {
+        display: flex;
+    }
+    .col {
+        flex: 0 0 48%;
+    }
+    .secondary {
+        margin-left: 3em;
+    }
+    ul.secondary {
+        margin-top: 0;
+    }
+    nav {
+        width: 30%;
+    }
+    
+}
+
+
+ /*
+
+- White Space
+- Color 
+- Contrast 
+- Scale
+- Alignment
+- Typography
+- Visual Hierarchy
+
+*/
+
+
+
+/* Ignore this -- for displaying the viewport width */
+.width-container {
+    display: none;
+}
+.display-width {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #E6E6E6;
+    padding: .3em;
+    font-size: .85em;
 }

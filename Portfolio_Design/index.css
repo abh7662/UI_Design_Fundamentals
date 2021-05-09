@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header{
+    display: grid;
+    grid-template: auto 313px auto / auto 313px auto;
+    grid-gap: 2em;
+    padding: 2em;
+}
+.header .hamburg{
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+}
+.header img{
+    width: 313px;
+    height: 313px;
+    object-fit: cover;
+    grid-column: 2/-2;
+    grid-row: 2/-2;
+}
+.header h1{
+    grid-column: 3;
+    grid-row: 2;
+    font-weight: 300;
+    margin-top: 1.5em;
+}
+.header h1 span{
+    display: block;
+    font-weight: 700;
+
+}
+.header p{
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    background-color: #1C4B43;
+    color: white;
+    letter-spacing: .2em;
+    padding: .5em;
+}
+
+.section_what_i_do{
+    background-image: url('services-bg.jpg');
+}
+
+
+

@@ -139,3 +139,34 @@ html, body {
     height: 406px;
     object-fit: cover;
 }
+
+.section_my_work{
+    display: grid;
+    background-color: #2E2E2E;
+    color: white;
+    grid-template: auto auto auto auto / repeat(4, 240px);
+    justify-content: center;
+    align-content: center;
+    padding: 3em 0;
+    padding-bottom: 8em;
+}
+
+.section_my_work h1{
+    grid-column: 1/-1;
+    grid-row: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.section_my_work p{
+    grid-column: 1/-1;
+    grid-row: 2;
+    text-align: center;
+    font-size: 1em;
+    color: #14CFAE;
+    font-weight: 700;
+}
+.section_my_work img{
+    width: 240px;
+    height: 240px;
+}

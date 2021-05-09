@@ -170,3 +170,28 @@ html, body {
     width: 240px;
     height: 240px;
 }
+
+.footer{
+    background-color: #141414;
+    color: #14CFAE;
+    text-align: center;
+    padding :3em 0;
+    /* border: 1px solid magenta; */
+}
+.footer a{
+    color: #14CFAE;
+    font-weight: 700;
+    font-size: 1em;
+    /* letter-spacing: .1em; */
+    text-decoration: none;
+}
+.footer ul{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    list-style: none;
+}
+
+.footer ul li{
+    padding: 1em;
+}

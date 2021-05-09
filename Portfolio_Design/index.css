@@ -50,7 +50,7 @@ html, body {
 .section_what_i_do{
     background-image: url('img/services-bg.jpg');
     color: white;
-    padding: 3em 8em;
+    padding: 5em 8em;
     gap: 1em 3em;
     display: grid;
     text-align: center;
@@ -96,4 +96,46 @@ html, body {
     font-size: 1.1em;
     transition: .7s;
 
+}
+
+.section_who_am_i{
+    display: grid;
+    grid-template: 80px auto auto auto 80px / 1fr 556px auto 1fr;
+    gap: 2em;
+}
+
+.section_who_am_i h1{
+    grid-row: 2;
+    grid-column: 2;
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+
+.section_who_am_i h4{
+    grid-row: 3;
+    grid-column: 2;
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    background-color: #14CFAE;
+    padding: .7em 1em;
+    letter-spacing: .1em;
+}
+
+
+.section_who_am_i p{
+    grid-row: 4;
+    grid-column: 2;
+    font-size: 1.1em;
+}
+
+
+.section_who_am_i img{
+    grid-row: 2/-2;
+    grid-column: 3;
+    width: 244px;
+    height: 406px;
+    object-fit: cover;
 }

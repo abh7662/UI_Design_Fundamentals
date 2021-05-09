@@ -48,8 +48,52 @@ html, body {
 }
 
 .section_what_i_do{
-    background-image: url('services-bg.jpg');
+    background-image: url('img/services-bg.jpg');
+    color: white;
+    padding: 3em 8em;
+    gap: 1em 3em;
+    display: grid;
+    text-align: center;
+    grid-template-areas: 
+    ".......    header   ......."
+    "section1 section2 section3"
+    "........ button .........."
+    ;
 }
 
+.section_what_i_do h1{
+    grid-area: header;
+    font-size: 3em;
+    color: #14CFAE;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.section_what_i_do .section1{
+    grid-area: section1;
 
+}
+.section_what_i_do .section2{
+    grid-area: section2;
 
+}
+.section_what_i_do .section3{
+    grid-area: section3;
+
+}
+.section_what_i_do button{
+    grid-area: button;
+    background-color: #14CFAE;
+    border: unset;
+    justify-self: center;
+    padding: 1em 3em;
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: .1em;
+}
+
+.section_what_i_do button:hover, .section_what_i_do button:focus{
+    font-size: 1.1em;
+    transition: .7s;
+
+}

@@ -87,14 +87,16 @@ html, body {
     border: unset;
     justify-self: center;
     padding: 1em 3em;
-    font-weight: 700;
+    /* font-weight: 700;
     font-size: 1em;
-    letter-spacing: .1em;
+    letter-spacing: .1em; */
+    transition: 1s;
+
 }
 
 .section_what_i_do button:hover, .section_what_i_do button:focus{
-    font-size: 1.1em;
-    transition: .7s;
+    transform: scale(1.1);
+    transition: 1s;
 
 }
 

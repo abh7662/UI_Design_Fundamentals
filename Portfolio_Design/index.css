@@ -197,3 +197,21 @@ html, body {
 .footer ul li{
     padding: 1em;
 }
+
+nav{
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    /* display: none; */
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li{
+    padding: 1em;
+
+}
